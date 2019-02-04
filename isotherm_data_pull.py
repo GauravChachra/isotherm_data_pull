@@ -15,6 +15,7 @@ df_all_isotherms = pd.read_csv('all_isotherms.csv')
 
 for item in all_files:
 
+
     if df_all_isotherms['Filename'].str.contains(item.split('.')[0], regex=False).any():
         pass
     else:
